@@ -18,6 +18,8 @@ COPY --from=builder --chown=nginx /src/docker/nginx-server.conf /etc/nginx/conf.
 COPY --from=builder --chown=nginx /src/static /opt/html
 COPY --from=builder --chown=nginx /src/out /opt/html
 
+
+RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD ["nginx", "-g", "daemon off;"]
