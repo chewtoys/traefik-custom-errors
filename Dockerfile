@@ -1,5 +1,5 @@
 # Image page: <https://hub.docker.com/_/node>
-FROM node:12.16.2-alpine as builder
+FROM node:12.16.2 as builder
 
 WORKDIR /src
 
