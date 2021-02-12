@@ -7,6 +7,7 @@ COPY . .
 
 RUN set -x \
     && yarn install --frozen-lockfile \
+    && chmod +x ./bin/generator.js \
     && ./bin/generator.js -c ./config.json -o ./out
 
 # Image page: <https://hub.docker.com/_/nginx>
