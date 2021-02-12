@@ -121,7 +121,7 @@ version: '3.4'
 
 services:
   error-pages:
-    image: tarampampam/error-pages:1.3.0
+    image: jerryhopper/traefik-custom-errors:latest
     environment:
       TEMPLATE_NAME: l7-dark
     networks:
@@ -169,43 +169,3 @@ networks:
     external: true
 ```
 
-## Changes log
-
-[![Release date][badge_release_date]][link_releases]
-[![Commits since latest release][badge_commits_since_release]][link_commits]
-
-Changes log can be [found here][link_changes_log].
-
-## Support
-
-[![Issues][badge_issues]][link_issues]
-[![Issues][badge_pulls]][link_pulls]
-
-If you will find any package errors, please, [make an issue][link_create_issue] in current repository.
-
-## License
-
-This is open-sourced software licensed under the [MIT License][link_license].
-
-[badge_build_status]:https://img.shields.io/github/workflow/status/tarampampam/error-pages/tests/master
-[badge_release_date]:https://img.shields.io/github/release-date/tarampampam/error-pages.svg?style=flat-square&maxAge=180
-[badge_commits_since_release]:https://img.shields.io/github/commits-since/tarampampam/error-pages/latest.svg?style=flat-square&maxAge=180
-[badge_issues]:https://img.shields.io/github/issues/tarampampam/error-pages.svg?style=flat-square&maxAge=180
-[badge_pulls]:https://img.shields.io/github/issues-pr/tarampampam/error-pages.svg?style=flat-square&maxAge=180
-[badge_license]:https://img.shields.io/github/license/tarampampam/error-pages.svg?longCache=true
-[badge_size_latest]:https://img.shields.io/docker/image-size/tarampampam/error-pages/latest?maxAge=30
-[badge_docker_pulls]:https://img.shields.io/docker/pulls/tarampampam/error-pages.svg
-[link_releases]:https://github.com/tarampampam/error-pages/releases
-[link_commits]:https://github.com/tarampampam/error-pages/commits
-[link_changes_log]:https://github.com/tarampampam/error-pages/blob/master/CHANGELOG.md
-[link_issues]:https://github.com/tarampampam/error-pages/issues
-[link_pulls]:https://github.com/tarampampam/error-pages/pulls
-[link_build_status]:https://travis-ci.org/tarampampam/error-pages
-[link_create_issue]:https://github.com/tarampampam/error-pages/issues/new
-[link_license]:https://github.com/tarampampam/error-pages/blob/master/LICENSE
-[link_docker_hub]:https://hub.docker.com/r/tarampampam/error-pages/
-[link_nginx]:http://nginx.org/
-[link_traefik]:https://docs.traefik.io/
-[link_swarm]:https://docs.docker.com/engine/swarm/
-[link_branch_gh_pages]:https://github.com/tarampampam/error-pages/tree/gh-pages
-[link_gh_pages]:https://tarampampam.github.io/error-pages/
