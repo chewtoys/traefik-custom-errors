@@ -23,4 +23,5 @@ COPY --from=builder --chown=nginx /src/static/index.html /var/www/public/index.h
 RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
+
 CMD ["nginx", "-g", "daemon off;"]
