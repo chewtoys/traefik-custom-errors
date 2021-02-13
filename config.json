@@ -22,10 +22,15 @@
     },
     "pages": [
         {
+            "code": 200,
+            "message": "Ok",
+            "description": "i see you"
+        },
+        {
             "code": 400,
             "message": "Bad Request",
             "description": "The server did not understand the request"
-        },
+        },        
         {
             "code": 401,
             "message": "Unauthorized",
