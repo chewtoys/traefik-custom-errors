@@ -19,6 +19,7 @@ COPY --from=builder --chown=nginx /src/static /opt/html
 COPY --from=builder --chown=nginx /src/out /opt/html
 
 COPY --chown=nginx ./static/index.html /var/www/public/index.html
+COPY --chown=nginx ./static/index.html /usr/share/nginx/html/index.html
 
 RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
